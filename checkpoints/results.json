@@ -1,0 +1,842 @@
+{
+  "config": {
+    "model_name": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "n_episodes": 60,
+    "n_soft_tokens": 8,
+    "learning_rate": 0.001,
+    "seed": 42
+  },
+  "initial_accuracy": 0.2,
+  "final_accuracy": 0.4,
+  "improvement": 0.2,
+  "training_results": [
+    {
+      "episode": 1,
+      "task_type": "causal",
+      "question": "Studying improves test scores. Alice studied for 10 hours. Bob did not study. Who likely scored higher?",
+      "correct_answer": "Alice",
+      "answer_before": "Alice",
+      "answer_after": "Alice",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 3.6945486068725586
+    },
+    {
+      "episode": 2,
+      "task_type": "sequence",
+      "question": "What comes next in this sequence: 1, 6, 5, 10, 9, ?",
+      "correct_answer": "14",
+      "answer_before": "1, 6, 5, 10, 9, 7, 4, 8, 3, 2",
+      "answer_after": "The next number in this sequence is 10",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 2.6104929447174072
+    },
+    {
+      "episode": 3,
+      "task_type": "causal",
+      "question": "The alarm rings when motion is detected. Motion was detected at 3am. The dog was outside. Did the alarm ring?",
+      "correct_answer": "Yes",
+      "answer_before": "Yes, the alarm rang",
+      "answer_after": "No, it did not ring",
+      "correct_before": true,
+      "correct_after": false,
+      "loss": 3.6053476333618164
+    },
+    {
+      "episode": 4,
+      "task_type": "logic_grid",
+      "question": "Alice likes red. Bob does not like red. What color does Charlie like?",
+      "correct_answer": "green",
+      "answer_before": "Charlie likes blue",
+      "answer_after": "Charlie likes blue",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 3.3908207416534424
+    },
+    {
+      "episode": 5,
+      "task_type": "logic_grid",
+      "question": "Charlie likes blue. Alice does not like blue. What color does Bob like?",
+      "correct_answer": "green",
+      "answer_before": "Bob likes red",
+      "answer_after": "The p",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 3.6192727088928223
+    },
+    {
+      "episode": 6,
+      "task_type": "causal",
+      "question": "Coffee makes John alert. John is tired. John did not drink coffee. Is John alert?",
+      "correct_answer": "No",
+      "answer_before": "No, John is not alert",
+      "answer_after": "No, John is not alert",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 3.401048421859741
+    },
+    {
+      "episode": 7,
+      "task_type": "sequence",
+      "question": "What comes next in this sequence: 4, 6, 8, 10, 12, ?",
+      "correct_answer": "14",
+      "answer_before": "The next number in this sequence is 12",
+      "answer_after": "12",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 1.7667590379714966
+    },
+    {
+      "episode": 8,
+      "task_type": "comparison",
+      "question": "Bob is smarter than Frank Frank is smarter than Eve Alice is smarter than Bob. Who is smarter, Alice or Eve?",
+      "correct_answer": "Alice",
+      "answer_before": "Alice is smarter than Eve",
+      "answer_after": "Alice is smarter",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 2.463447093963623
+    },
+    {
+      "episode": 9,
+      "task_type": "causal",
+      "question": "Studying improves test scores. Alice studied for 10 hours. Bob did not study. Who likely scored higher?",
+      "correct_answer": "Alice",
+      "answer_before": "Alice",
+      "answer_after": "Alice",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 3.1096949577331543
+    },
+    {
+      "episode": 10,
+      "task_type": "causal",
+      "question": "Studying improves test scores. Alice studied for 10 hours. Bob did not study. Who likely scored higher?",
+      "correct_answer": "Alice",
+      "answer_before": "Alice",
+      "answer_after": "Alice",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 3.0551390647888184
+    },
+    {
+      "episode": 11,
+      "task_type": "logic_grid",
+      "question": "Bob likes red. Alice does not like red. What color does Charlie like?",
+      "correct_answer": "blue",
+      "answer_before": "Charlie likes blue",
+      "answer_after": "Charlie likes blue",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 2.76141619682312
+    },
+    {
+      "episode": 12,
+      "task_type": "comparison",
+      "question": "Eve is taller than Alice Bob is taller than Eve. Who is the tallest?",
+      "correct_answer": "Bob",
+      "answer_before": "Alice",
+      "answer_after": "Alice",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 2.7542667388916016
+    },
+    {
+      "episode": 13,
+      "task_type": "comparison",
+      "question": "Diana is smarter than Alice Alice is smarter than Bob Bob is smarter than Eve. Who is the smartest?",
+      "correct_answer": "Diana",
+      "answer_before": "Diana is the smartest",
+      "answer_after": "Diana is smarter than Alice",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 2.15643048286438
+    },
+    {
+      "episode": 14,
+      "task_type": "math_word",
+      "question": "There are 26 birds. 6 fly away. How many remain?",
+      "correct_answer": "20",
+      "answer_before": "6",
+      "answer_after": "12",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 2.836214303970337
+    },
+    {
+      "episode": 15,
+      "task_type": "comparison",
+      "question": "Eve is taller than Diana Diana is taller than Bob Bob is taller than Charlie. Who is the tallest?",
+      "correct_answer": "Eve",
+      "answer_before": "Eve is taller than Diana",
+      "answer_after": "Eve is taller than Diana",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 2.138814926147461
+    },
+    {
+      "episode": 16,
+      "task_type": "sequence",
+      "question": "What comes next in this sequence: 3, 9, 27, 81, ?",
+      "correct_answer": "243",
+      "answer_before": "9",
+      "answer_after": "13, 49, 139, 417, ?",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 1.8611329793930054
+    },
+    {
+      "episode": 17,
+      "task_type": "sequence",
+      "question": "What comes next in this sequence: 2, 4, 5, 10, 11, ?",
+      "correct_answer": "22",
+      "answer_before": "12",
+      "answer_after": "12",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 1.7503315210342407
+    },
+    {
+      "episode": 18,
+      "task_type": "math_word",
+      "question": "Alice has 7 apples. Bob gives her 10 more. How many does she have?",
+      "correct_answer": "17",
+      "answer_before": "10",
+      "answer_after": "6",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 2.3000097274780273
+    },
+    {
+      "episode": 19,
+      "task_type": "logic_grid",
+      "question": "Alice likes red. Charlie does not like red. What color does Bob like?",
+      "correct_answer": "blue",
+      "answer_before": "Blue",
+      "answer_after": "Blue",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 2.4148154258728027
+    },
+    {
+      "episode": 20,
+      "task_type": "math_word",
+      "question": "There are 35 birds. 8 fly away. How many remain?",
+      "correct_answer": "27",
+      "answer_before": "12",
+      "answer_after": "12",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 2.6382699012756348
+    },
+    {
+      "episode": 21,
+      "task_type": "math_word",
+      "question": "Alice has 10 apples. Bob gives her 9 more. How many does she have?",
+      "correct_answer": "19",
+      "answer_before": "11",
+      "answer_after": "11",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 2.219963550567627
+    },
+    {
+      "episode": 22,
+      "task_type": "comparison",
+      "question": "Bob is smarter than Charlie Charlie is smarter than Diana Frank is smarter than Bob. Who is smarter, Frank or Diana?",
+      "correct_answer": "Frank",
+      "answer_before": "Frank",
+      "answer_after": "Frank",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 2.239753484725952
+    },
+    {
+      "episode": 23,
+      "task_type": "logic_grid",
+      "question": "Alice likes red. Bob does not like red. What color does Charlie like?",
+      "correct_answer": "green",
+      "answer_before": "Blue",
+      "answer_after": "Blue",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 2.03466534614563
+    },
+    {
+      "episode": 24,
+      "task_type": "comparison",
+      "question": "Bob is older than Alice Eve is older than Bob. Who is older, Eve or Alice?",
+      "correct_answer": "Eve",
+      "answer_before": "Eve is older than Alice",
+      "answer_after": "Alice",
+      "correct_before": true,
+      "correct_after": false,
+      "loss": 2.0089046955108643
+    },
+    {
+      "episode": 25,
+      "task_type": "logic_grid",
+      "question": "Alice likes green. Charlie does not like green. What color does Bob like?",
+      "correct_answer": "red",
+      "answer_before": "Washington, D",
+      "answer_after": "Blue",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 2.253608465194702
+    },
+    {
+      "episode": 26,
+      "task_type": "sequence",
+      "question": "What comes next in this sequence: 1, 1, 2, 3, 5, ?",
+      "correct_answer": "8",
+      "answer_before": "2",
+      "answer_after": "3",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 1.3232632875442505
+    },
+    {
+      "episode": 27,
+      "task_type": "sequence",
+      "question": "What comes next in this sequence: 1, 1, 2, 3, 5, ?",
+      "correct_answer": "8",
+      "answer_before": "4",
+      "answer_after": "3, 5, 7, 9, 11, 13, 15, 17, 1",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 1.2955613136291504
+    },
+    {
+      "episode": 28,
+      "task_type": "math_word",
+      "question": "Alice has 14 apples. Bob gives her 10 more. How many does she have?",
+      "correct_answer": "24",
+      "answer_before": "14",
+      "answer_after": "Bob has 14 apples",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 1.8096059560775757
+    },
+    {
+      "episode": 29,
+      "task_type": "causal",
+      "question": "If it rains, the ground gets wet. If the ground is wet, plants grow. It rained yesterday. Did plants grow?",
+      "correct_answer": "Yes",
+      "answer_before": "Yes",
+      "answer_after": "Yes, because the ground was wet",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 1.9417078495025635
+    },
+    {
+      "episode": 30,
+      "task_type": "comparison",
+      "question": "Frank is older than Eve Eve is older than Alice Diana is older than Frank. Who is the youngest?",
+      "correct_answer": "Alice",
+      "answer_before": "Alice",
+      "answer_after": "Frank",
+      "correct_before": true,
+      "correct_after": false,
+      "loss": 2.3937532901763916
+    },
+    {
+      "episode": 31,
+      "task_type": "causal",
+      "question": "The alarm rings when motion is detected. Motion was detected at 3am. The dog was outside. Did the alarm ring?",
+      "correct_answer": "Yes",
+      "answer_before": "Yes, the alarm rang",
+      "answer_after": "Yes, the alarm rang at 3am",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 2.9026007652282715
+    },
+    {
+      "episode": 32,
+      "task_type": "math_word",
+      "question": "Each box has 8 items. There are 6 boxes. How many items total?",
+      "correct_answer": "48",
+      "answer_before": "12",
+      "answer_after": "12",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 2.0864500999450684
+    },
+    {
+      "episode": 33,
+      "task_type": "logic_grid",
+      "question": "Charlie likes green. Alice does not like green. What color does Bob like?",
+      "correct_answer": "blue",
+      "answer_before": "Blue",
+      "answer_after": "Blue",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 2.2190613746643066
+    },
+    {
+      "episode": 34,
+      "task_type": "causal",
+      "question": "If it rains, the ground gets wet. If the ground is wet, plants grow. It rained yesterday. Did plants grow?",
+      "correct_answer": "Yes",
+      "answer_before": "Yes, they grew",
+      "answer_after": "Yes, they grew",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 1.8412307500839233
+    },
+    {
+      "episode": 35,
+      "task_type": "comparison",
+      "question": "Bob is faster than Frank Frank is faster than Charlie. Who is the slowest?",
+      "correct_answer": "Charlie",
+      "answer_before": "Charlie",
+      "answer_after": "Charlie",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 2.3904261589050293
+    },
+    {
+      "episode": 36,
+      "task_type": "comparison",
+      "question": "Diana is taller than Frank Charlie is taller than Diana. Who is taller, Charlie or Frank?",
+      "correct_answer": "Charlie",
+      "answer_before": "Charlie",
+      "answer_after": "Charlie",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 2.1330482959747314
+    },
+    {
+      "episode": 37,
+      "task_type": "causal",
+      "question": "The alarm rings when motion is detected. Motion was detected at 3am. The dog was outside. Did the alarm ring?",
+      "correct_answer": "Yes",
+      "answer_before": "No",
+      "answer_after": "Yes, the alarm rang",
+      "correct_before": false,
+      "correct_after": true,
+      "loss": 2.81963849067688
+    },
+    {
+      "episode": 38,
+      "task_type": "math_word",
+      "question": "Each box has 8 items. There are 7 boxes. How many items total?",
+      "correct_answer": "56",
+      "answer_before": "There are 15 items total",
+      "answer_after": "16",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 2.0689425468444824
+    },
+    {
+      "episode": 39,
+      "task_type": "logic_grid",
+      "question": "Alice likes green. Charlie does not like green. What color does Bob like?",
+      "correct_answer": "blue",
+      "answer_before": "Blue",
+      "answer_after": "Blue",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 1.8703172206878662
+    },
+    {
+      "episode": 40,
+      "task_type": "causal",
+      "question": "The alarm rings when motion is detected. Motion was detected at 3am. The dog was outside. Did the alarm ring?",
+      "correct_answer": "Yes",
+      "answer_before": "Yes, the alarm did ring",
+      "answer_after": "Yes, the alarm rang",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 2.7406516075134277
+    },
+    {
+      "episode": 41,
+      "task_type": "math_word",
+      "question": "Alice has 6 apples. Bob gives her 7 more. How many does she have?",
+      "correct_answer": "13",
+      "answer_before": "Bob has 5 apples",
+      "answer_after": "5",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 1.753131628036499
+    },
+    {
+      "episode": 42,
+      "task_type": "causal",
+      "question": "If it rains, the ground gets wet. If the ground is wet, plants grow. It rained yesterday. Did plants grow?",
+      "correct_answer": "Yes",
+      "answer_before": "Yes, they grew",
+      "answer_after": "Yes, they did",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 1.7341687679290771
+    },
+    {
+      "episode": 43,
+      "task_type": "causal",
+      "question": "The alarm rings when motion is detected. Motion was detected at 3am. The dog was outside. Did the alarm ring?",
+      "correct_answer": "Yes",
+      "answer_before": "Yes, the alarm rang",
+      "answer_after": "Motion was detected at 3am",
+      "correct_before": true,
+      "correct_after": false,
+      "loss": 2.6424498558044434
+    },
+    {
+      "episode": 44,
+      "task_type": "sequence",
+      "question": "What comes next in this sequence: 6, 13, 20, 27, 34, ?",
+      "correct_answer": "41",
+      "answer_before": "31",
+      "answer_after": "27",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 1.00596022605896
+    },
+    {
+      "episode": 45,
+      "task_type": "logic_grid",
+      "question": "Charlie likes red. Alice does not like red. What color does Bob like?",
+      "correct_answer": "blue",
+      "answer_before": "Bob likes blue",
+      "answer_after": "Yellow",
+      "correct_before": true,
+      "correct_after": false,
+      "loss": 1.95705246925354
+    },
+    {
+      "episode": 46,
+      "task_type": "comparison",
+      "question": "Frank is older than Charlie Diana is older than Frank. Who is the youngest?",
+      "correct_answer": "Charlie",
+      "answer_before": "Charlie",
+      "answer_after": "Charlie",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 2.361642837524414
+    },
+    {
+      "episode": 47,
+      "task_type": "comparison",
+      "question": "Diana is faster than Bob Eve is faster than Diana Bob is faster than Frank. Who is the slowest?",
+      "correct_answer": "Frank",
+      "answer_before": "Diana",
+      "answer_after": "Diana",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 2.609164237976074
+    },
+    {
+      "episode": 48,
+      "task_type": "causal",
+      "question": "Coffee makes John alert. John is tired. John did not drink coffee. Is John alert?",
+      "correct_answer": "No",
+      "answer_before": "Yes",
+      "answer_after": "No, John is not alert",
+      "correct_before": false,
+      "correct_after": true,
+      "loss": 2.4208478927612305
+    },
+    {
+      "episode": 49,
+      "task_type": "comparison",
+      "question": "Frank is faster than Charlie Eve is faster than Frank Diana is faster than Eve. Who is the fastest?",
+      "correct_answer": "Diana",
+      "answer_before": "Eve",
+      "answer_after": "Eve",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 2.052232503890991
+    },
+    {
+      "episode": 50,
+      "task_type": "comparison",
+      "question": "Diana is taller than Eve Frank is taller than Charlie Charlie is taller than Diana. Who is taller, Frank or Eve?",
+      "correct_answer": "Frank",
+      "answer_before": "Charlie",
+      "answer_after": "Charlie",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 2.004322052001953
+    },
+    {
+      "episode": 51,
+      "task_type": "math_word",
+      "question": "Alice has 11 apples. Bob gives her 8 more. How many does she have?",
+      "correct_answer": "19",
+      "answer_before": "2",
+      "answer_after": "Bob has 3 apples",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 1.706432819366455
+    },
+    {
+      "episode": 52,
+      "task_type": "math_word",
+      "question": "Alice has 15 apples. Bob gives her 8 more. How many does she have?",
+      "correct_answer": "23",
+      "answer_before": "Bob has 7 apples",
+      "answer_after": "Bob has 7 apples",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 1.6096978187561035
+    },
+    {
+      "episode": 53,
+      "task_type": "comparison",
+      "question": "Bob is smarter than Diana Eve is smarter than Bob Charlie is smarter than Eve. Who is smarter, Charlie or Diana?",
+      "correct_answer": "Charlie",
+      "answer_before": "Charlie",
+      "answer_after": "Charlie",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 1.7829762697219849
+    },
+    {
+      "episode": 54,
+      "task_type": "math_word",
+      "question": "Each box has 8 items. There are 5 boxes. How many items total?",
+      "correct_answer": "40",
+      "answer_before": "12",
+      "answer_after": "12",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 1.9325448274612427
+    },
+    {
+      "episode": 55,
+      "task_type": "logic_grid",
+      "question": "Charlie likes green. Bob does not like green. What color does Alice like?",
+      "correct_answer": "blue",
+      "answer_before": "Red",
+      "answer_after": "Red",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 1.9091147184371948
+    },
+    {
+      "episode": 56,
+      "task_type": "causal",
+      "question": "The alarm rings when motion is detected. Motion was detected at 3am. The dog was outside. Did the alarm ring?",
+      "correct_answer": "Yes",
+      "answer_before": "Yes, the alarm rang at 3am",
+      "answer_after": "Yes, the alarm rang at 3am",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 2.4703681468963623
+    },
+    {
+      "episode": 57,
+      "task_type": "math_word",
+      "question": "Each box has 7 items. There are 9 boxes. How many items total?",
+      "correct_answer": "63",
+      "answer_before": "14",
+      "answer_after": "14",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 1.8718727827072144
+    },
+    {
+      "episode": 58,
+      "task_type": "causal",
+      "question": "Studying improves test scores. Alice studied for 10 hours. Bob did not study. Who likely scored higher?",
+      "correct_answer": "Alice",
+      "answer_before": "Alice",
+      "answer_after": "Alice",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 2.435025691986084
+    },
+    {
+      "episode": 59,
+      "task_type": "math_word",
+      "question": "There are 41 birds. 8 fly away. How many remain?",
+      "correct_answer": "33",
+      "answer_before": "32",
+      "answer_after": "32",
+      "correct_before": false,
+      "correct_after": false,
+      "loss": 2.0277202129364014
+    },
+    {
+      "episode": 60,
+      "task_type": "logic_grid",
+      "question": "Bob likes blue. Alice does not like blue. What color does Charlie like?",
+      "correct_answer": "red",
+      "answer_before": "red",
+      "answer_after": "Red",
+      "correct_before": true,
+      "correct_after": true,
+      "loss": 1.6663274765014648
+    }
+  ],
+  "eval_results": [
+    {
+      "episode": 15,
+      "accuracy": 0.45,
+      "correct": 9,
+      "total": 20
+    },
+    {
+      "episode": 30,
+      "accuracy": 0.35,
+      "correct": 7,
+      "total": 20
+    },
+    {
+      "episode": 45,
+      "accuracy": 0.4,
+      "correct": 8,
+      "total": 20
+    },
+    {
+      "episode": 60,
+      "accuracy": 0.4,
+      "correct": 8,
+      "total": 20
+    }
+  ],
+  "final_eval_data": [
+    {
+      "question": "Bob is older than Frank Charlie is older than Bob. Who is older, Charlie or Frank?",
+      "predicted": "Charlie",
+      "correct": "Charlie",
+      "is_correct": true,
+      "task_type": "comparison"
+    },
+    {
+      "question": "Alice has 5 apples. Bob gives her 4 more. How many does she have?",
+      "predicted": "11",
+      "correct": "9",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "question": "What comes next in this sequence: 2, 4, 8, 16, ?",
+      "predicted": "8",
+      "correct": "32",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "question": "Bob likes green. Alice does not like green. What color does Charlie like?",
+      "predicted": "Red",
+      "correct": "red",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "question": "What comes next in this sequence: 3, 6, 7, 14, 15, ?",
+      "predicted": "15",
+      "correct": "30",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "question": "What comes next in this sequence: 4, 8, 16, 32, ?",
+      "predicted": "24",
+      "correct": "64",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "question": "Charlie is faster than Eve Diana is faster than Charlie Eve is faster than Alice. Who is the slowest?",
+      "predicted": "Alice",
+      "correct": "Alice",
+      "is_correct": true,
+      "task_type": "comparison"
+    },
+    {
+      "question": "Diana is older than Frank Eve is older than Charlie Charlie is older than Diana. Who is the oldest?",
+      "predicted": "Diana",
+      "correct": "Eve",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "question": "Diana is faster than Charlie Alice is faster than Diana Charlie is faster than Frank. Who is faster, Alice or Frank?",
+      "predicted": "Charlie",
+      "correct": "Alice",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "question": "What comes next in this sequence: 3, 9, 27, 81, ?",
+      "predicted": "9",
+      "correct": "243",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "question": "There are 49 birds. 15 fly away. How many remain?",
+      "predicted": "44",
+      "correct": "34",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "question": "Alice likes red. Bob does not like red. What color does Charlie like?",
+      "predicted": "blue",
+      "correct": "blue",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "question": "There are 22 birds. 8 fly away. How many remain?",
+      "predicted": "14",
+      "correct": "14",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "question": "Charlie likes green. Bob does not like green. What color does Alice like?",
+      "predicted": "Red",
+      "correct": "red",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "question": "Alice has 13 apples. Bob gives her 5 more. How many does she have?",
+      "predicted": "18",
+      "correct": "18",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "question": "What comes next in this sequence: 1, 1, 2, 3, 5, ?",
+      "predicted": "2, 3, 5, 7, 11",
+      "correct": "8",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "question": "Bob likes red. Charlie does not like red. What color does Alice like?",
+      "predicted": "Red",
+      "correct": "blue",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "question": "Bob is smarter than Alice Alice is smarter than Eve. Who is the least smart?",
+      "predicted": "Bob",
+      "correct": "Eve",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "question": "Bob likes green. Charlie does not like green. What color does Alice like?",
+      "predicted": "Red",
+      "correct": "blue",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "question": "If it rains, the ground gets wet. If the ground is wet, plants grow. It rained yesterday. Did plants grow?",
+      "predicted": "Yes, plants grew",
+      "correct": "Yes",
+      "is_correct": true,
+      "task_type": "causal"
+    }
+  ]
+}
