@@ -1,0 +1,731 @@
+{
+  "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+  "n_episodes": 80,
+  "n_soft_tokens": 8,
+  "learning_rate": 0.001,
+  "use_chat_template": false,
+  "training": [
+    {
+      "episode": 1,
+      "loss": 6.321375846862793,
+      "predicted": "10 hours. Question: Studying improves by 10 hours. Alice did not study",
+      "correct": "Alice",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 2,
+      "loss": 3.376375436782837,
+      "predicted": "",
+      "correct": "14",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 3,
+      "loss": 5.50543737411499,
+      "predicted": "The dog was outside. The alarm ring",
+      "correct": "Yes",
+      "is_correct": false,
+      "task_type": "causal"
+    },
+    {
+      "episode": 4,
+      "loss": 5.666801452636719,
+      "predicted": "What color is a person? What color is a person?",
+      "correct": "green",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 5,
+      "loss": 5.435258388519287,
+      "predicted": "Charlie likes blue, what color do you",
+      "correct": "green",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 6,
+      "loss": 5.847827434539795,
+      "predicted": "Yes, John is also a participant in",
+      "correct": "No",
+      "is_correct": false,
+      "task_type": "causal"
+    },
+    {
+      "episode": 7,
+      "loss": 2.5794434547424316,
+      "predicted": "10, 25, 30, 40, 45,",
+      "correct": "14",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 8,
+      "loss": 3.9824671745300293,
+      "predicted": "Eve is smarter than Bob. Who is smarter, Eve or Bob?\nEve and Bob are not",
+      "correct": "Alice",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 9,
+      "loss": 4.931923866271973,
+      "predicted": "10 hours. 25 hours. 30 hours. 40 hours.",
+      "correct": "Alice",
+      "is_correct": false,
+      "task_type": "causal"
+    },
+    {
+      "episode": 10,
+      "loss": 4.823683738708496,
+      "predicted": "10 hours. 15 hours. 20 hours. 30 hours.",
+      "correct": "Alice",
+      "is_correct": false,
+      "task_type": "causal"
+    },
+    {
+      "episode": 11,
+      "loss": 4.274131774902344,
+      "predicted": "Red, Green, Orange, Yellow, Purple, Blue, 50, 40",
+      "correct": "blue",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 12,
+      "loss": 4.1191253662109375,
+      "predicted": "1000000000000000000",
+      "correct": "Bob",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 13,
+      "loss": 3.2894513607025146,
+      "predicted": "Bob is smarter than Eve. How many people are there in the world in the world? In the",
+      "correct": "Diana",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 14,
+      "loss": 3.5515336990356445,
+      "predicted": "26 flies away. How many remain? 10 flies away. How many remain?",
+      "correct": "20",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 15,
+      "loss": 4.0905046463012695,
+      "predicted": "Bob is taller than Charlie. Charlie is not taller than Charlie.\nCharlie is not taller than Charlie.",
+      "correct": "Eve",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 16,
+      "loss": 3.0442395210266113,
+      "predicted": "34, 56,",
+      "correct": "243",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 17,
+      "loss": 2.1614115238189697,
+      "predicted": "10\nQuestion: What comes next in this sequence: 2, 4,",
+      "correct": "22",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 18,
+      "loss": 3.1935935020446777,
+      "predicted": "7\nQuestion: Bob gives her 12 more. How many does she have?\nAnswer",
+      "correct": "17",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 19,
+      "loss": 3.8770675659179688,
+      "predicted": "Bob likes to play to the 10th. The 9th. The 8th",
+      "correct": "blue",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 20,
+      "loss": 3.2134087085723877,
+      "predicted": "30 and 15,",
+      "correct": "27",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 21,
+      "loss": 2.806185722351074,
+      "predicted": "",
+      "correct": "13",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 22,
+      "loss": 3.121022939682007,
+      "predicted": "Yes. It rained yesterday",
+      "correct": "Yes",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 23,
+      "loss": 4.141900062561035,
+      "predicted": "The dog was",
+      "correct": "Yes",
+      "is_correct": false,
+      "task_type": "causal"
+    },
+    {
+      "episode": 24,
+      "loss": 2.2859034538269043,
+      "predicted": "The sequence of 6, 13, 27, 34, 5",
+      "correct": "41",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 25,
+      "loss": 3.9465949535369873,
+      "predicted": "Bob likes to be",
+      "correct": "blue",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 26,
+      "loss": 3.6420321464538574,
+      "predicted": "Frank is 3 years old. How many of the questions? Are you older than Frank. What",
+      "correct": "Charlie",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 27,
+      "loss": 3.7822470664978027,
+      "predicted": "2. What is the most",
+      "correct": "Frank",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 28,
+      "loss": 4.4262003898620605,
+      "predicted": "John is alert. He was also a victim of the coffee. John is now being asked to answer",
+      "correct": "No",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 29,
+      "loss": 4.0203070640563965,
+      "predicted": "Frank is faster than 3.5.4.5.6.7.8.9",
+      "correct": "Diana",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 30,
+      "loss": 4.030616760253906,
+      "predicted": "Diana is taller than Charlie, Frank is 20 years older than Charlie. How tall is Frank",
+      "correct": "Frank",
+      "is_correct": true,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 31,
+      "loss": 2.609940767288208,
+      "predicted": "12\nQuestion: Alice has 59 apples. Bob gives her 8 more.",
+      "correct": "19",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 32,
+      "loss": 2.471317768096924,
+      "predicted": "15\nQuestion: Bob gives her 8 more. How many does she have?\nAnswer",
+      "correct": "23",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 33,
+      "loss": 4.099367618560791,
+      "predicted": "Diana.\nQuestion:",
+      "correct": "Charlie",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 34,
+      "loss": 2.6244120597839355,
+      "predicted": "1. 2. 3. 4. 5. 6. 7",
+      "correct": "40",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 35,
+      "loss": 3.254376173019409,
+      "predicted": "The color",
+      "correct": "blue",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 36,
+      "loss": 3.9487555027008057,
+      "predicted": "The dog was outside. Did the alarm ring? Yes, it did.\nThe answer is to a",
+      "correct": "Yes",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 37,
+      "loss": 2.5241918563842773,
+      "predicted": "10\n25\n30\n4\n25\n30\n4",
+      "correct": "63",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 38,
+      "loss": 3.790998935699463,
+      "predicted": "Studying improves test scores. Alice studied for 10 hours. Bob did not study. What",
+      "correct": "Alice",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 39,
+      "loss": 2.948439836502075,
+      "predicted": "20\nQuestion: There are 41 birds. If there is a 5 fly",
+      "correct": "33",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 40,
+      "loss": 3.061363935470581,
+      "predicted": "It's a",
+      "correct": "red",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 41,
+      "loss": 1.787722110748291,
+      "predicted": "18\nQuestion: Bob gives a 50% answer. How many does he give",
+      "correct": "25",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 42,
+      "loss": 1.8682868480682373,
+      "predicted": "2\n2\n2\n2\n2\n2\n2\n2\n2\n2",
+      "correct": "40",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 43,
+      "loss": 1.603145956993103,
+      "predicted": "",
+      "correct": "14",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 44,
+      "loss": 3.139423370361328,
+      "predicted": "Charlie likes green.Some Plants in the air\nAnimals may grow plants in the air,",
+      "correct": "red",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 45,
+      "loss": 1.548886775970459,
+      "predicted": "10\nQuestion: Bob gives a 7th. How many",
+      "correct": "13",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 46,
+      "loss": 2.0817863941192627,
+      "predicted": "10% of the total population of birds. There are now 24% of the",
+      "correct": "14",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 47,
+      "loss": 4.3177809715271,
+      "predicted": "John is",
+      "correct": "No",
+      "is_correct": false,
+      "task_type": "causal"
+    },
+    {
+      "episode": 48,
+      "loss": 2.2635607719421387,
+      "predicted": "20\nQuestion: There are 48 birds. 11 fly away. How",
+      "correct": "33",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 49,
+      "loss": 2.5191378593444824,
+      "predicted": "Yes. The answer",
+      "correct": "Yes",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 50,
+      "loss": 1.5466811656951904,
+      "predicted": "10 apples\nTotal of 20\nCorrect answer is not given by any other.",
+      "correct": "14",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 51,
+      "loss": 1.960728406906128,
+      "predicted": "8, 9",
+      "correct": "11",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 52,
+      "loss": 2.091217279434204,
+      "predicted": "7, 8",
+      "correct": "32",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 53,
+      "loss": 1.722105622291565,
+      "predicted": "4",
+      "correct": "80",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 54,
+      "loss": 3.04028582572937,
+      "predicted": "Blue.\nQuestion: How many people",
+      "correct": "green",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 55,
+      "loss": 1.4301103353500366,
+      "predicted": "2,",
+      "correct": "8",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 56,
+      "loss": 4.690662384033203,
+      "predicted": "",
+      "correct": "Eve",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 57,
+      "loss": 1.2690736055374146,
+      "predicted": "14. \nQuestion",
+      "correct": "15",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 58,
+      "loss": 2.980496644973755,
+      "predicted": "It is a mix of colors,",
+      "correct": "red",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 59,
+      "loss": 3.283440113067627,
+      "predicted": "Bob does not like blue",
+      "correct": "red",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 60,
+      "loss": 2.3804879188537598,
+      "predicted": "12.5",
+      "correct": "28",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 61,
+      "loss": 2.240994453430176,
+      "predicted": "10 fly",
+      "correct": "24",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 62,
+      "loss": 1.4498049020767212,
+      "predicted": "",
+      "correct": "40",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 63,
+      "loss": 3.2540183067321777,
+      "predicted": "Frank is taller than 30 cm.",
+      "correct": "Frank",
+      "is_correct": true,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 64,
+      "loss": 1.4985826015472412,
+      "predicted": "16, 23, 37.\nWhat comes next in this sequence:",
+      "correct": "44",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 65,
+      "loss": 2.7069599628448486,
+      "predicted": "Blue.Human is",
+      "correct": "red",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 66,
+      "loss": 2.581312894821167,
+      "predicted": "Blue. \nQuestion: Does Bob like green? Does Charlie like green?\nAnswer",
+      "correct": "blue",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 67,
+      "loss": 1.0970934629440308,
+      "predicted": "2, 3, 5, .\nCorrect",
+      "correct": "8",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 68,
+      "loss": 3.2645065784454346,
+      "predicted": "None of",
+      "correct": "Alice",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 69,
+      "loss": 2.302330493927002,
+      "predicted": "Blue. What color do you like? Answer",
+      "correct": "green",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 70,
+      "loss": 1.4157931804656982,
+      "predicted": "13.______ ____ __ __ __ __ __ __ __ __ __ __ __ __",
+      "correct": "19",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 71,
+      "loss": 2.25453782081604,
+      "predicted": "Red, but not like red. What color is the sky? Bob likes to play to the sky",
+      "correct": "blue",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 72,
+      "loss": 3.923408269882202,
+      "predicted": "No.\nQuestion",
+      "correct": "Yes",
+      "is_correct": false,
+      "task_type": "causal"
+    },
+    {
+      "episode": 73,
+      "loss": 3.3696601390838623,
+      "predicted": "Charlie is smarter than Bob. Is",
+      "correct": "Eve",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 74,
+      "loss": 2.1691174507141113,
+      "predicted": "12.5% of the total remains.\nCorrect answer: 13.5%.",
+      "correct": "23",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 75,
+      "loss": 2.118053674697876,
+      "predicted": "13. shown in this type of displayed, shown in this type of display is shown",
+      "correct": "8",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 76,
+      "loss": 3.087263822555542,
+      "predicted": "Frank., where, where, where, where, and how, where, what, and",
+      "correct": "Alice",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 77,
+      "loss": 3.3300375938415527,
+      "predicted": "Frank, is faster than Diana. Is it faster than Eve? Does it take more time to answer",
+      "correct": "Frank",
+      "is_correct": true,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 78,
+      "loss": 1.6841726303100586,
+      "predicted": "10. Question: There are 25 birds, and 3 fly away. How",
+      "correct": "23",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 79,
+      "loss": 2.580003499984741,
+      "predicted": "No. They did not.\nThey did not.\nYes, they did.\nThey did not.\nNone",
+      "correct": "Yes",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 80,
+      "loss": 1.2590585947036743,
+      "predicted": "2,5.Recovery of information is given to user's age in question.\nAnswer",
+      "correct": "8",
+      "is_correct": false,
+      "task_type": "sequence"
+    }
+  ],
+  "evaluations": [
+    {
+      "episode": 0,
+      "accuracy": 0.1,
+      "per_task_accuracy": {
+        "comparison": 0.2,
+        "sequence": 0.0,
+        "causal": 1.0,
+        "math_word": 0.0,
+        "logic_grid": 0.0
+      },
+      "n_correct": 2,
+      "n_total": 20
+    },
+    {
+      "episode": 20,
+      "accuracy": 0.3,
+      "per_task_accuracy": {
+        "comparison": 0.0,
+        "sequence": 0.0,
+        "causal": 0.6,
+        "math_word": 0.0,
+        "logic_grid": 0.75
+      },
+      "n_correct": 6,
+      "n_total": 20
+    },
+    {
+      "episode": 40,
+      "accuracy": 0.2,
+      "per_task_accuracy": {
+        "comparison": 0.0,
+        "sequence": 0.0,
+        "causal": 0.75,
+        "math_word": 0.16666666666666666,
+        "logic_grid": 0.0
+      },
+      "n_correct": 4,
+      "n_total": 20
+    },
+    {
+      "episode": 60,
+      "accuracy": 0.2,
+      "per_task_accuracy": {
+        "comparison": 0.5,
+        "sequence": 0.0,
+        "causal": 0.42857142857142855,
+        "math_word": 0.0,
+        "logic_grid": 0.0
+      },
+      "n_correct": 4,
+      "n_total": 20
+    },
+    {
+      "episode": 80,
+      "accuracy": 0.35,
+      "per_task_accuracy": {
+        "comparison": 0.4,
+        "sequence": 0.0,
+        "causal": 0.75,
+        "math_word": 0.0,
+        "logic_grid": 1.0
+      },
+      "n_correct": 7,
+      "n_total": 20
+    }
+  ],
+  "start_time": "2025-10-23T04:47:14.585446",
+  "elapsed_time": 140.04184913635254,
+  "episodes_per_sec": 0.5712578096716471,
+  "final_evaluation": {
+    "accuracy": 0.2,
+    "per_task_accuracy": {
+      "comparison": 0.3,
+      "sequence": 0.0,
+      "causal": 0.5,
+      "math_word": 0.0,
+      "logic_grid": 0.125
+    },
+    "n_correct": 10,
+    "n_total": 50
+  }
+}

@@ -1,0 +1,731 @@
+{
+  "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+  "n_episodes": 80,
+  "n_soft_tokens": 8,
+  "learning_rate": 0.001,
+  "use_chat_template": true,
+  "training": [
+    {
+      "episode": 1,
+      "loss": 4.178685188293457,
+      "predicted": "Alice likely scored higher than Bob. Studying improves test scores, so Alice's increased study time would",
+      "correct": "Alice",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 2,
+      "loss": 3.1741490364074707,
+      "predicted": "The next number in the sequence 1, 6, 5, 10,",
+      "correct": "14",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 3,
+      "loss": 3.9895241260528564,
+      "predicted": "Yes, the alarm would ring because motion was detected at 3am and the dog was outside.",
+      "correct": "Yes",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 4,
+      "loss": 4.012511730194092,
+      "predicted": "Charlie likes blue.",
+      "correct": "green",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 5,
+      "loss": 3.9613332748413086,
+      "predicted": "Bob likes red.",
+      "correct": "green",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 6,
+      "loss": 3.6679322719573975,
+      "predicted": "No, John is not alert. He was tired and did not drink coffee, which would have made",
+      "correct": "No",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 7,
+      "loss": 2.311701774597168,
+      "predicted": "The next number in the sequence is 14.",
+      "correct": "14",
+      "is_correct": true,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 8,
+      "loss": 3.0841801166534424,
+      "predicted": "Frank is smarter than Eve, so Alice is smarter than Frank.",
+      "correct": "Alice",
+      "is_correct": true,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 9,
+      "loss": 3.2026021480560303,
+      "predicted": "Alice likely scored higher. Studying improves test scores, but it is not guaranteed that studying alone will",
+      "correct": "Alice",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 10,
+      "loss": 3.142883777618408,
+      "predicted": "Alice likely scored higher. Studying improves test scores, so Alice's increased study time would result in",
+      "correct": "Alice",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 11,
+      "loss": 3.340207815170288,
+      "predicted": "Charlie likes blue.",
+      "correct": "blue",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 12,
+      "loss": 2.8756847381591797,
+      "predicted": "Alice is the tallest.",
+      "correct": "Bob",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 13,
+      "loss": 2.5723235607147217,
+      "predicted": "Diana is the smartest.",
+      "correct": "Diana",
+      "is_correct": true,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 14,
+      "loss": 2.640001058578491,
+      "predicted": "There are 20 birds remaining.",
+      "correct": "20",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 15,
+      "loss": 2.5476863384246826,
+      "predicted": "Charlie",
+      "correct": "Eve",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 16,
+      "loss": 1.777164101600647,
+      "predicted": "The next number in the sequence is 243.",
+      "correct": "243",
+      "is_correct": true,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 17,
+      "loss": 1.706170916557312,
+      "predicted": "The next number in the sequence is 16.",
+      "correct": "22",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 18,
+      "loss": 2.0502634048461914,
+      "predicted": "Alice now has 7 + 10 = 17 apples.",
+      "correct": "17",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 19,
+      "loss": 2.7042620182037354,
+      "predicted": "Bob likes blue.",
+      "correct": "blue",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 20,
+      "loss": 2.1749072074890137,
+      "predicted": "There are 35 birds remaining.",
+      "correct": "27",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 21,
+      "loss": 1.9064569473266602,
+      "predicted": "Alice now has 6 + 7 = 13 apples.",
+      "correct": "13",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 22,
+      "loss": 1.7319978475570679,
+      "predicted": "Yes, plants grew because it rained yesterday.",
+      "correct": "Yes",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 23,
+      "loss": 2.5682146549224854,
+      "predicted": "Yes, the alarm would have been ringing because motion was detected at 3am and the dog was",
+      "correct": "Yes",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 24,
+      "loss": 1.3215993642807007,
+      "predicted": "The next number in the sequence is 41.",
+      "correct": "41",
+      "is_correct": true,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 25,
+      "loss": 2.4365360736846924,
+      "predicted": "Bob likes blue.",
+      "correct": "blue",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 26,
+      "loss": 2.162148952484131,
+      "predicted": "Charlie is the youngest.",
+      "correct": "Charlie",
+      "is_correct": true,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 27,
+      "loss": 2.0855510234832764,
+      "predicted": "Frank",
+      "correct": "Frank",
+      "is_correct": true,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 28,
+      "loss": 2.2559750080108643,
+      "predicted": "Yes, John is alert.",
+      "correct": "No",
+      "is_correct": false,
+      "task_type": "causal"
+    },
+    {
+      "episode": 29,
+      "loss": 2.4020493030548096,
+      "predicted": "Frank is the fastest.",
+      "correct": "Diana",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 30,
+      "loss": 2.258659601211548,
+      "predicted": "Charlie is taller than Diana, so Charlie is taller than Eve.",
+      "correct": "Frank",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 31,
+      "loss": 1.5946857929229736,
+      "predicted": "Alice has 11 + 8 = 19 apples.",
+      "correct": "19",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 32,
+      "loss": 1.505225419998169,
+      "predicted": "Alice has 15 + 8 = 23 apples.",
+      "correct": "23",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 33,
+      "loss": 2.0765433311462402,
+      "predicted": "Charlie is smarter.",
+      "correct": "Charlie",
+      "is_correct": true,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 34,
+      "loss": 1.5090669393539429,
+      "predicted": "There are 5 boxes * 8 items/box = 40 items total.",
+      "correct": "40",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 35,
+      "loss": 2.136871337890625,
+      "predicted": "Alice likes blue.",
+      "correct": "blue",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 36,
+      "loss": 2.134758472442627,
+      "predicted": "Yes, the alarm would ring because motion was detected at 3am and the dog was outside.",
+      "correct": "Yes",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 37,
+      "loss": 1.4438375234603882,
+      "predicted": "There are 63 items in total.",
+      "correct": "63",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 38,
+      "loss": 1.887724757194519,
+      "predicted": "Alice likely scored higher.",
+      "correct": "Alice",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 39,
+      "loss": 1.5513595342636108,
+      "predicted": "There are 41 birds remaining.",
+      "correct": "33",
+      "is_correct": false,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 40,
+      "loss": 1.7493788003921509,
+      "predicted": "Charlie likes red.",
+      "correct": "red",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 41,
+      "loss": 1.3769433498382568,
+      "predicted": "Alice has 25 apples.",
+      "correct": "25",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 42,
+      "loss": 1.4099431037902832,
+      "predicted": "There are 40 items in total.",
+      "correct": "40",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 43,
+      "loss": 1.2291945219039917,
+      "predicted": "Alice has 14 apples.",
+      "correct": "14",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 44,
+      "loss": 1.8461456298828125,
+      "predicted": "Bob likes blue.",
+      "correct": "red",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 45,
+      "loss": 1.1878693103790283,
+      "predicted": "Alice has 13 apples.",
+      "correct": "13",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 46,
+      "loss": 1.2087217569351196,
+      "predicted": "There are 14 birds remaining.",
+      "correct": "14",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 47,
+      "loss": 1.729902744293213,
+      "predicted": "Yes.",
+      "correct": "No",
+      "is_correct": false,
+      "task_type": "causal"
+    },
+    {
+      "episode": 48,
+      "loss": 1.2363523244857788,
+      "predicted": "There are 33 birds remaining.",
+      "correct": "33",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 49,
+      "loss": 1.0768390893936157,
+      "predicted": "Yes.",
+      "correct": "Yes",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 50,
+      "loss": 1.0074615478515625,
+      "predicted": "Alice has 14 apples.",
+      "correct": "14",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 51,
+      "loss": 0.7208791971206665,
+      "predicted": "The next number in the sequence is 11.",
+      "correct": "11",
+      "is_correct": true,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 52,
+      "loss": 0.7792680263519287,
+      "predicted": "10",
+      "correct": "32",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 53,
+      "loss": 0.7429105043411255,
+      "predicted": "The next number in the sequence is 80.",
+      "correct": "80",
+      "is_correct": true,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 54,
+      "loss": 1.3334825038909912,
+      "predicted": "Charlie likes red.",
+      "correct": "green",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 55,
+      "loss": 0.7102536559104919,
+      "predicted": "The next number in the sequence is 8.",
+      "correct": "8",
+      "is_correct": true,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 56,
+      "loss": 1.8659521341323853,
+      "predicted": "Diana is smarter.",
+      "correct": "Eve",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 57,
+      "loss": 0.5832774639129639,
+      "predicted": "15",
+      "correct": "15",
+      "is_correct": true,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 58,
+      "loss": 1.334862232208252,
+      "predicted": "Charlie likes red.",
+      "correct": "red",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 59,
+      "loss": 1.5294712781906128,
+      "predicted": "Alice likes red.",
+      "correct": "red",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 60,
+      "loss": 0.9782873392105103,
+      "predicted": "40 - 12 = 28.",
+      "correct": "28",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 61,
+      "loss": 1.0380339622497559,
+      "predicted": "24",
+      "correct": "24",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 62,
+      "loss": 0.6562217473983765,
+      "predicted": "The next number in the sequence is 40.",
+      "correct": "40",
+      "is_correct": true,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 63,
+      "loss": 1.367055058479309,
+      "predicted": "Frank",
+      "correct": "Frank",
+      "is_correct": true,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 64,
+      "loss": 0.6475839018821716,
+      "predicted": "The next number in the sequence is 40.",
+      "correct": "44",
+      "is_correct": false,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 65,
+      "loss": 1.461739420890808,
+      "predicted": "Bob likes red.",
+      "correct": "red",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 66,
+      "loss": 1.482886552810669,
+      "predicted": "Alice likes blue.",
+      "correct": "blue",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 67,
+      "loss": 0.5449508428573608,
+      "predicted": "The next number in the sequence is 8.",
+      "correct": "8",
+      "is_correct": true,
+      "task_type": "sequence"
+    },
+    {
+      "episode": 68,
+      "loss": 1.1233888864517212,
+      "predicted": "Alice",
+      "correct": "Alice",
+      "is_correct": true,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 69,
+      "loss": 1.3810368776321411,
+      "predicted": "Alice likes blue.",
+      "correct": "green",
+      "is_correct": false,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 70,
+      "loss": 0.7223309874534607,
+      "predicted": "19",
+      "correct": "19",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 71,
+      "loss": 1.2729617357254028,
+      "predicted": "Bob likes blue.",
+      "correct": "blue",
+      "is_correct": true,
+      "task_type": "logic_grid"
+    },
+    {
+      "episode": 72,
+      "loss": 1.6983287334442139,
+      "predicted": "Yes",
+      "correct": "Yes",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 73,
+      "loss": 1.1238524913787842,
+      "predicted": "Eve is smarter.",
+      "correct": "Eve",
+      "is_correct": true,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 74,
+      "loss": 0.8864492774009705,
+      "predicted": "23",
+      "correct": "23",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 75,
+      "loss": 0.9088997840881348,
+      "predicted": "18",
+      "correct": "8",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 76,
+      "loss": 1.1875567436218262,
+      "predicted": "Charlie",
+      "correct": "Alice",
+      "is_correct": false,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 77,
+      "loss": 1.2390666007995605,
+      "predicted": "Frank",
+      "correct": "Frank",
+      "is_correct": true,
+      "task_type": "comparison"
+    },
+    {
+      "episode": 78,
+      "loss": 0.7599200010299683,
+      "predicted": "23",
+      "correct": "23",
+      "is_correct": true,
+      "task_type": "math_word"
+    },
+    {
+      "episode": 79,
+      "loss": 0.8563313484191895,
+      "predicted": "Yes",
+      "correct": "Yes",
+      "is_correct": true,
+      "task_type": "causal"
+    },
+    {
+      "episode": 80,
+      "loss": 0.47626107931137085,
+      "predicted": "13",
+      "correct": "8",
+      "is_correct": false,
+      "task_type": "sequence"
+    }
+  ],
+  "evaluations": [
+    {
+      "episode": 0,
+      "accuracy": 0.65,
+      "per_task_accuracy": {
+        "comparison": 0.6,
+        "sequence": 0.8,
+        "causal": 1.0,
+        "math_word": 0.5,
+        "logic_grid": 0.6
+      },
+      "n_correct": 13,
+      "n_total": 20
+    },
+    {
+      "episode": 20,
+      "accuracy": 0.85,
+      "per_task_accuracy": {
+        "comparison": 0.8,
+        "sequence": 1.0,
+        "causal": 1.0,
+        "math_word": 1.0,
+        "logic_grid": 0.5
+      },
+      "n_correct": 17,
+      "n_total": 20
+    },
+    {
+      "episode": 40,
+      "accuracy": 0.7,
+      "per_task_accuracy": {
+        "comparison": 0.0,
+        "sequence": 0.8,
+        "causal": 0.75,
+        "math_word": 1.0,
+        "logic_grid": 0.3333333333333333
+      },
+      "n_correct": 14,
+      "n_total": 20
+    },
+    {
+      "episode": 60,
+      "accuracy": 0.5,
+      "per_task_accuracy": {
+        "comparison": 0.0,
+        "sequence": 0.3333333333333333,
+        "causal": 0.7142857142857143,
+        "math_word": 0.6666666666666666,
+        "logic_grid": 0.4
+      },
+      "n_correct": 10,
+      "n_total": 20
+    },
+    {
+      "episode": 80,
+      "accuracy": 0.6,
+      "per_task_accuracy": {
+        "comparison": 0.4,
+        "sequence": 0.5,
+        "causal": 0.75,
+        "math_word": 0.8571428571428571,
+        "logic_grid": 0.0
+      },
+      "n_correct": 12,
+      "n_total": 20
+    }
+  ],
+  "start_time": "2025-10-23T04:45:44.445869",
+  "elapsed_time": 49.97178602218628,
+  "episodes_per_sec": 1.6009033570359466,
+  "final_evaluation": {
+    "accuracy": 0.62,
+    "per_task_accuracy": {
+      "comparison": 0.5,
+      "sequence": 0.3333333333333333,
+      "causal": 0.8333333333333334,
+      "math_word": 0.7272727272727273,
+      "logic_grid": 0.625
+    },
+    "n_correct": 31,
+    "n_total": 50
+  }
+}
