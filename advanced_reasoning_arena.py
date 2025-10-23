@@ -56,10 +56,22 @@ class AdvancedReasoningArena:
 
         task = self.task_generators[task_type]()
 
-        # Filter by difficulty if specified
+        # Filter by difficulty if specified (with retry limit)
         if difficulty is not None:
-            while task.difficulty != difficulty:
+            max_retries = 50  # Prevent infinite loop
+            retries = 0
+            while task.difficulty != difficulty and retries < max_retries:
                 task = self.task_generators[task_type]()
+                retries += 1
+
+            # If we can't generate exact difficulty, accept close match
+            if retries >= max_retries and abs(task.difficulty - difficulty) > 1:
+                # Try any task type to get target difficulty
+                for _ in range(20):
+                    task_type = random.choice(list(self.task_generators.keys()))
+                    task = self.task_generators[task_type]()
+                    if task.difficulty == difficulty:
+                        break
 
         return task
 
