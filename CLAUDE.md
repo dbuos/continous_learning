@@ -7,12 +7,21 @@
 
 This project implements a **continuous learning system for agentic LLMs** that learns in real-time through gradient descent on soft prompt embeddings. The system demonstrates measurable improvement on diverse reasoning tasks using a lightweight, parameter-efficient approach.
 
-### Key Results
+### Key Results (TinyLlama Baseline)
 
 - **Training Loss**: Decreased from 3.69 → 1.67 (-55% reduction)
 - **Accuracy**: Improved from 20% → 40% (+20% absolute improvement)
 - **Architecture**: Only 16,384 trainable parameters (soft prompts) while keeping 1.1B base model frozen
 - **Efficiency**: 0.47 episodes/sec on NVIDIA L4 GPU
+
+### Qwen2.5 Validation Results
+
+- **Model**: Qwen/Qwen2.5-0.5B-Instruct (494M parameters, 7,168 trainable soft prompts)
+- **Initial Accuracy**: 65.0% (much stronger baseline than TinyLlama)
+- **Final Accuracy**: 62.0% (stable, minimal degradation)
+- **Speed**: 1.60 episodes/sec (3.4x faster than TinyLlama)
+- **Key Finding**: Ceiling effect - better pre-training leaves less room for improvement
+- **See**: `qwen_experiments/` for detailed results
 
 ---
 
@@ -82,11 +91,19 @@ for episode in range(n_episodes):
 /content/
 ├── reasoning_arena.py          # Task generation engine
 ├── continuous_learner_v2.py    # Soft prompting + gradient descent
-├── train_continuous.py         # Main training script
-├── checkpoints/                # Saved models and results
+├── train_continuous.py         # Main training script (TinyLlama)
+├── lora_learner.py             # Alternative: LoRA-based learner
+├── train_lora.py               # Alternative: LoRA training script
+├── checkpoints/                # TinyLlama experiment results
 │   ├── checkpoint_ep*.pt       # Model checkpoints
 │   ├── results.json            # Training metrics
 │   └── learning_curves.png     # Visualization
+├── qwen_experiments/           # Qwen2.5 validation experiments ⭐
+│   ├── README.md               # Qwen experiment documentation
+│   ├── qwen_learner.py         # Qwen-specific learner
+│   ├── train_qwen.py           # Qwen training script
+│   ├── checkpoints/            # With chat template
+│   └── checkpoints_no_template/# Without chat template
 └── CLAUDE.md                   # This documentation
 ```
 
@@ -104,6 +121,12 @@ for episode in range(n_episodes):
    - Result: **Successful learning!**
    - Initial: 20% → Final: 40%
    - Loss: 3.69 → 1.67
+
+4. **Qwen/Qwen2.5-0.5B-Instruct** (494M params) ✓
+   - Result: **Excellent baseline, stable performance**
+   - Initial: 65% → Final: 62%
+   - Speed: 3.4x faster than TinyLlama
+   - Key: Chat template critical for performance
 
 ---
 
